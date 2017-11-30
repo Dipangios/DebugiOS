@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4D5D38541FCFD84300C363CC /* DebugiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5D38521FCFD84300C363CC /* DebugiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D5D385D1FCFD8D900C363CC /* BDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5D385C1FCFD8D900C363CC /* BDebug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D5D384F1FCFD84200C363CC /* DebugiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DebugiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5D38521FCFD84300C363CC /* DebugiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugiOS.h; sourceTree = "<group>"; };
 		4D5D38531FCFD84300C363CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5D385C1FCFD8D900C363CC /* BDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDebug.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				4D5D38521FCFD84300C363CC /* DebugiOS.h */,
 				4D5D38531FCFD84300C363CC /* Info.plist */,
+				4D5D385C1FCFD8D900C363CC /* BDebug.swift */,
 			);
 			path = DebugiOS;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					4D5D384E1FCFD84200C363CC = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5D385D1FCFD8D900C363CC /* BDebug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		4D5D38581FCFD84300C363CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -265,6 +271,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Botree.DebugiOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,6 +280,7 @@
 		4D5D38591FCFD84300C363CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
